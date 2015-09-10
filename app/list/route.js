@@ -55,5 +55,14 @@ export default Ember.Route.extend({
         status: true
       }),
     ];
+  },
+
+  setupController(controller, model) {
+    this._super(controller, null);
+    controller.set('items', model);
   }
+
+
+
+
 });
