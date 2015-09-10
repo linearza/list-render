@@ -29,37 +29,16 @@ export default Ember.Route.extend({
         title: "Hey 5",
         status: false
       }),
-      Ember.Object.create({
-        id: 6,
-        title: "Hey 6",
-        status: false
-      }),
-      Ember.Object.create({
-        id: 7,
-        title: "Hey 7",
-        status: false
-      }),
-      Ember.Object.create({
-        id: 8,
-        title: "Hey 8",
-        status: true
-      }),
-      Ember.Object.create({
-        id: 9,
-        title: "Hey 9",
-        status: false
-      }),
-      Ember.Object.create({
-        id: 10,
-        title: "Hey 10",
-        status: true
-      }),
     ];
   },
 
   setupController(controller, model) {
     this._super(controller, null);
-    controller.set('items', model);
+    controller.setProperties({
+      items: model,
+      isActive: false,
+      nextId: model.length +1,
+    });
   }
 
 
