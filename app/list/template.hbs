@@ -1,3 +1,8 @@
-{{x-list items=items}}
 
-<button {{action 'doToggle'}}>Toggle</button>
+<button {{action 'doToggle'}}>Toggle</button> {{#if isActive}}Active{{else}}Inactive{{/if}}
+
+<br>
+<br>
+
+
+{{x-list items=items isActive=isActive}}
