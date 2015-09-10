@@ -1,10 +1,6 @@
-ul{
-  border: 1px solid grey;
+.boxed {
+  background-color: #efefef;
+  border: 2px solid #333;
   padding: 20px;
-  list-style: none;
-}
-
-ul li {
-  padding: 20px;
-  border: 1px solid lightgrey;
+  margin-bottom: 5px;
 }

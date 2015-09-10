@@ -54,6 +54,6 @@ export default Ember.Route.extend({
         title: "Hey 10",
         status: true
       }),
-    ]
+    ];
   }
 });
