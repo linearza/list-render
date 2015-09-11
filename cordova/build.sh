@@ -1,1 +1,1 @@
-$ cp -r ../dist/  ./www
+cp -r ../dist/  ./www
